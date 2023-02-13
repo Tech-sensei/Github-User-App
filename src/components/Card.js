@@ -19,12 +19,12 @@ const Card = () => {
   return (
     <Wrapper>
       <header>
-        <img src={avatar_url} alt="Tobiloba" />
+        <img src={avatar_url} alt={name} />
         <div>
           <h4>{name}</h4>
           <p>@{twitter_username || "john-doe"}</p>
         </div>
-        <a href={html_url} target='_blank'>
+        <a href={html_url} target="_blank" rel="noreferrer">
           follow
         </a>
       </header>
